@@ -1,0 +1,25 @@
+{
+  "name": "unraveled-dummy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^8.12.0",
+    "mocha": "^9.2.2"
+  },
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unraveled/dummy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unraveled/dummy/issues"
+  },
+  "homepage": "https://github.com/unraveled/dummy#readme"
+}
