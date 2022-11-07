@@ -7,7 +7,6 @@ global:
     branch:
       - all
 
-
 jobs:
   - name: install-deps and run test
     commands: 
