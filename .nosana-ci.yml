@@ -3,11 +3,12 @@ nosana:
 
 
 global:
-  image: registry.hub.docker.com/library/node:16
+  image: node:16
   environment:
     SECRET: 
-      type: nosana-node/secret
-      value: answer-to-life
+      type: "nosana/secret"
+      endpoint: "https://secrets.k8s.prd.nos.ci"
+      value: SECRET
   trigger:
     branch:
       - all
@@ -15,6 +16,6 @@ global:
 jobs:
   - name: install-deps and run test
     commands: 
-      - sh -c 'answer is $SECRET'
+      - echo answer is $SECRET
       - npm ci
       - npm run test
