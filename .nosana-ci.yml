@@ -7,7 +7,7 @@ global:
   environment:
     SECRET: 
       type: "nosana/secret"
-      endpoint: "https://secrets.k8s.prd.nos.ci"
+      endpoint: "https://secrets.k8s.dev.nos.ci"
       value: SECRET
   trigger:
     branch:
