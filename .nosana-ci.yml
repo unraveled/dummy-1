@@ -3,7 +3,7 @@ nosana:
 
 
 global:
-  image: node:16
+  image: node:18
   environment:
     SECRET: 
       type: "nosana/secret"
@@ -25,7 +25,7 @@ jobs:
       - npm install
       - npm run test
       
-      - name: check artifact
-        commands:
-          - ls -lha
+  - name: check artifact
+    commands:
+      - ls -lha
           - ls -lha test
