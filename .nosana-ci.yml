@@ -15,7 +15,17 @@ global:
 
 jobs:
   - name: install-deps and run test
+    artifacts:
+      - name: data
+        paths:
+          - "*.yml"
+          - "**/*.js*"   
     commands: 
       - echo answer is $SECRET
       - npm ci
       - npm run test
+      
+      - name: check artifact
+        commands:
+          - ls -lha
+          - ls -lha test
