@@ -32,3 +32,4 @@ jobs:
     commands:
       - ls -lha data
       - ls -lha data/test
+      - ls -lha data/node_modules
