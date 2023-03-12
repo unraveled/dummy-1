@@ -28,7 +28,7 @@ jobs:
   - name: check artifact
     resources:
       - name: data
-        path: "."
+        path: data
     commands:
-      - ls -lha
-      - ls -lha test
+      - ls -lha data
+      - ls -lha data/test
