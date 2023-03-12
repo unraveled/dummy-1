@@ -22,7 +22,7 @@ jobs:
           - "**/*.js*"   
     commands: 
       - echo answer is $SECRET
-      - npm ci
+      - npm install
       - npm run test
       
       - name: check artifact
