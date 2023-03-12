@@ -26,6 +26,9 @@ jobs:
       - npm run test
       
   - name: check artifact
+    resources:
+      - name: data
+        path: "."
     commands:
       - ls -lha
-          - ls -lha test
+      - ls -lha test
