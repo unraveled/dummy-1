@@ -7,9 +7,9 @@ global:
   image-pull-secret:
     username: jesse
     password:
-      type: "nosana/secret"
-      endpoint: "https://secrets.k8s.dev.nos.ci"
-      value: DOCKERHUBPASS
+      - type: "nosana/secret"
+        endpoint: "https://secrets.k8s.dev.nos.ci"
+        value: DOCKERHUBPASS
   environment:
     SECRET: 
       type: "nosana/secret"
