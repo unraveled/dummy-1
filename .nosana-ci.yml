@@ -4,6 +4,12 @@ nosana:
 
 global:
   image: registry.hub.docker.com/jeisses/rtb_monitor:v4
+  image-pull-secret:
+    username: jesse
+    password:
+      type: "nosana/secret"
+      endpoint: "https://secrets.k8s.dev.nos.ci"
+      value: DOCKERHUBPASS
   environment:
     SECRET: 
       type: "nosana/secret"
