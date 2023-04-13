@@ -4,7 +4,7 @@ nosana:
 
 global:
   #image: registry.hub.docker.com/jeisses/rtb_monitor:v4
-  image: node:16
+  image: alpine
   image-pull-secret:
     username: jesse
     password:
@@ -22,15 +22,15 @@ global:
 
 jobs:
   - name: install-deps and run test
-    artifacts:
-      - name: data
-        paths:
-          - "*.yml"
-          - "**/*.js*"   
+    #artifacts:
+     # - name: data
+      #  paths:
+       #   - "*.yml"
+        #  - "**/*.js*"   
     commands: 
       - echo answer is $SECRET
-      - npm install
-      - npm run test
+      #- npm install
+      #- npm run test
       - sleep 10
       
   - name: check artifact
