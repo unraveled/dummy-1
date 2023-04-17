@@ -28,6 +28,8 @@ jobs:
        #   - "*.yml"
         #  - "**/*.js*"   
     commands: 
+      - pwd
+      - ls
       - echo answer is $SECRET
       #- npm install
       #- npm run test
