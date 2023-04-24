@@ -4,7 +4,7 @@ nosana:
 
 global:
   #image: registry.hub.docker.com/jeisses/rtb_monitor:v4
-  image: alpine
+  image: ubuntu:latest
   image-pull-secret:
     username: jesse
     password:
@@ -34,6 +34,8 @@ jobs:
       #- npm install
       #- npm run test
       - sleep 10
+    resources:
+      - name: xyz
       
   - name: check artifact
     resources:
