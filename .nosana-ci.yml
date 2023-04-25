@@ -34,8 +34,6 @@ jobs:
       #- npm install
       #- npm run test
       - sleep 10
-    artifacts:
-      - name: xyz
       
   - name: check artifact
     resources:
