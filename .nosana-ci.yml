@@ -18,7 +18,7 @@ global:
       value: SECRET
   trigger:
     branch:
-      - all
+      - main
 
 jobs:
   - name: install-deps and run test
@@ -43,3 +43,10 @@ jobs:
       - ls -lha data
       - ls -lha data/test
       - ls -lha data/node_modules
+
+  - name: devnet
+    commands:
+      - echo "only trigger on devnet"
+    trigger:
+      branch:
+        - dev
