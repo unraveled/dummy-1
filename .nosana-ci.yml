@@ -33,7 +33,7 @@ jobs:
       - sleep 10
     trigger:
       push:
-        branches:
+        branch:
           - main
       
   - name: check artifact
@@ -50,5 +50,5 @@ jobs:
       - echo "only trigger on dev branch"
     trigger:
       push:
-        branches:
+        branch:
           - dev
