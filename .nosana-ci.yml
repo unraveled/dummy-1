@@ -16,10 +16,10 @@ global:
       type: "nosana/secret"
       endpoint: "https://secrets.k8s.dev.nos.ci"
       value: SECRET
-    trigger:
-      push:
-        branches:
-          - all
+  trigger:
+    push:
+      branches:
+        - all
 
 jobs:
   - name: install-deps and run test
