@@ -16,9 +16,6 @@ global:
       type: "nosana/secret"
       endpoint: "https://secrets.k8s.dev.nos.ci"
       value: SECRET
-  trigger:
-    branch:
-      - main
 
 jobs:
   - name: install-deps and run test
@@ -34,6 +31,10 @@ jobs:
       #- npm install
       #- npm run test
       - sleep 10
+    trigger:
+      push:
+        branch:
+          - main
       
   - name: check artifact
     resources:
