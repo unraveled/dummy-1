@@ -46,7 +46,7 @@ jobs:
 
   - name: devnet
     commands:
-      - echo "only trigger on devnet"
+      - echo "only trigger on dev branch"
     trigger:
       branch:
         - dev
