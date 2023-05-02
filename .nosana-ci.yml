@@ -16,6 +16,10 @@ global:
       type: "nosana/secret"
       endpoint: "https://secrets.k8s.dev.nos.ci"
       value: SECRET
+    trigger:
+      push:
+        branches:
+          - all
 
 jobs:
   - name: install-deps and run test
@@ -33,7 +37,7 @@ jobs:
       - sleep 10
     trigger:
       push:
-        branch:
+        branches:
           - main
       
   - name: check artifact
@@ -50,5 +54,5 @@ jobs:
       - echo "only trigger on dev branch"
     trigger:
       push:
-        branch:
+        branches:
           - dev
