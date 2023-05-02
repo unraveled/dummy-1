@@ -48,5 +48,6 @@ jobs:
     commands:
       - echo "only trigger on dev branch"
     trigger:
-      branch:
-        - dev
+      push:
+        branches:
+          - dev
